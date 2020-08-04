@@ -13,6 +13,12 @@ namespace Teachify
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
+
+        private void BtnNavigation_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SecondPage());
         }
     }
 }
